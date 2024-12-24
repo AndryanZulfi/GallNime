@@ -1,0 +1,467 @@
+@import url("https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Chewy&family=Climate+Crisis&family=Fredoka+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Chela+One&family=Chewy&family=Climate+Crisis&family=Coiny&family=Fredoka+One&family=Knewave&family=Londrina+Shadow&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Chela+One&family=Chewy&family=Climate+Crisis&family=Coiny&family=Knewave&family=Lilita+One&family=Londrina+Shadow&display=swap");
+/* Sidebar */
+
+body {
+  font-family: Arial, sans-serif, "Arial Narrow";
+  background-image: url(../img/all/DarkAnime2.webp);
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  width: 100vw;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+nav {
+  top: 0;
+  position: fixed;
+  width: 100%;
+  height: auto;
+}
+
+.inline {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+
+.inline .sidebar-satu {
+  font-size: 35px;
+  font-weight: bold;
+  font-family: "Fredoka One", "Knewave", "Chewy", "Black Ops One", Verdana, sans-serif, Geneva, Tahoma, "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  margin: 20px 0 0 10px;
+  color: rgb(220, 220, 220);
+}
+
+.inline .sidebar-dua {
+  margin: 15px 40px 0 10px;
+  width: 600px;
+  font-family: "Black Ops One", "Chewy", "Fredoka One", "Black Ops One", Verdana, sans-serif, Geneva, Tahoma, "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.sidebar-dua ul li {
+  display: inline-block;
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+.sidebar-dua li a {
+  text-decoration: none;
+  color: rgb(170, 170, 170);
+  position: relative;
+}
+
+.btn-login {
+  width: 65px;
+  height: 20px;
+  font-size: 20px;
+  background: transparent;
+  border: 2px solid white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  line-height: 20px;
+  text-align: center;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.btn-login:hover h3 {
+  opacity: 1;
+  color: white;
+}
+
+.sidebar-tiga a {
+  text-decoration: none;
+  color: rgb(170, 170, 170);
+}
+.inline .sidebar-tiga {
+  margin: 10px 10px 0 10px;
+}
+
+hr {
+  width: 95%;
+}
+
+/* overlay */
+
+/* anime series */
+.animeseries {
+  position: fixed;
+  margin: 0 -50px;
+  background-color: white;
+  box-shadow: 0 0 5px;
+  width: 220px;
+  height: 110px;
+  border-radius: 10px;
+  overflow: auto;
+  opacity: 0;
+  transition: 0.1s 0.3s;
+  z-index: 9999;
+}
+.animeseries li a {
+  text-decoration: none;
+  color: gray;
+  font-size: 20px;
+}
+.animeseries li {
+  margin-bottom: 10px;
+}
+
+.animeseries ul {
+  margin-top: 15px;
+  margin-left: 10px;
+}
+
+.sidebar-dua .anime:hover .animeseries {
+  animation: overlayFide 0.5s 0.5s forwards alternate;
+}
+
+/* overlay Navigasi */
+.sidebar-dua a::after {
+  content: " ";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 100%;
+  height: 3px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 0.5s;
+}
+
+.sidebar-dua a:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+@keyframes overlayFide {
+  0% {
+    height: 0;
+    opacity: 0;
+  }
+  100% {
+    height: 170px;
+    opacity: 0.85;
+  }
+}
+
+/* Content */
+
+.container {
+  width: 100%;
+  margin: auto;
+  margin-top: 170px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.content {
+  max-width: 500px;
+  margin-right: 10px;
+  margin-top: 10px;
+  margin-bottom: 50px;
+}
+
+.content h1 {
+  font-size: 3em;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.content p {
+  color: white;
+}
+
+.content .judul2 {
+  font-size: 35px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.content .paraf {
+  margin-bottom: 30px;
+}
+
+.lihatGallery {
+  position: absolute;
+  border: 2px solid white;
+  background: transparent;
+  height: 50px;
+  line-height: 50px;
+  border-radius: 10px;
+  margin-top: -20px;
+}
+
+.lihatGallery::before,
+.lihatGallery::after {
+  content: "";
+  width: 100%;
+  height: 50%;
+  position: absolute;
+  background-color: rgb(170, 170, 170);
+  z-index: -1;
+  overflow: hidden;
+  transition: transform 0.5s;
+}
+.lihatGallery::before {
+  top: 0;
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: left;
+}
+
+.lihatGallery::after {
+  bottom: 0;
+  right: 0;
+  transform: scaleX(0);
+  transform-origin: right;
+}
+.lihatGallery:hover::before {
+  transform: scaleX(1);
+  transform-origin: right;
+}
+.lihatGallery:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.lihatGallery a {
+  font-family: "Fredoka One", "Knewave", "Chewy", "Black Ops One", Verdana, sans-serif, Geneva, Tahoma, "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-decoration: none;
+  color: rgb(170, 170, 170);
+  font-size: 20px;
+  padding: 10px;
+  text-transform: capitalize;
+  transition: 0.5 s;
+}
+
+.lihatGallery:hover a {
+  opacity: 0.9;
+  color: white;
+}
+
+/* animationText */
+
+:root {
+  --gradien1: linear-gradient(-145deg, #7f8c8d 10%, #424242 25%, #bdc3c7 50%, #ffffff 100%);
+}
+
+.animationText {
+  outline: none;
+  text-transform: uppercase;
+  background: var(--gradien1);
+  background-size: 400%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: animate2 5s infinite alternate;
+  font-family: "Lilita One", cursive;
+}
+
+@keyframes animate {
+  to {
+    background-position: 400%;
+  }
+}
+
+@keyframes animate2 {
+  0% {
+    background-position: left;
+  }
+  100% {
+    background-position: right;
+  }
+}
+
+/* Image */
+img {
+  width: 100%;
+  background-size: cover;
+  box-sizing: border-box;
+  transition: 0.3s;
+}
+img:hover {
+  transform: scale(1.05);
+}
+
+.image {
+  margin-top: 10px;
+  width: 100%;
+  display: grid;
+  gap: 1%;
+  transition: 0.7s 0.3s;
+}
+
+.image .naruto {
+  border-radius: 10px;
+}
+
+.image .tanjiro img {
+  border-radius: 10px;
+}
+
+/* .image .gojo {
+} */
+
+.image .naruto img {
+  border: 5px solid;
+  border-radius: 10px;
+
+  /* background-image: radial-gradient(white, white), linear-gradient(90deg, rgb(150, 24, 204), rgb(252, 202, 20)); */
+  background-image: radial-gradient(white, white), linear-gradient(90deg, rgb(164, 163, 163), rgb(255, 255, 255));
+  border: double 5px transparent;
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  box-shadow: 0 0 5px;
+}
+
+.image .asta img {
+  border: 5px solid;
+  border-radius: 10px;
+  background-image: linear-gradient(white, white), linear-gradient(90deg, rgb(100, 100, 100), rgb(255, 255, 255));
+  border: double 5px transparent;
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  box-shadow: 0 0 5px;
+}
+
+.image .tanjiro img {
+  border: 5px solid;
+  border-radius: 10px;
+
+  background-image: linear-gradient(white, white), linear-gradient(90deg, rgb(255, 255, 255), rgb(100, 100, 100));
+  border: double 5px transparent;
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  box-shadow: 0 0 5px;
+}
+
+.image .gojo img {
+  border: 5px solid;
+  border-radius: 10px;
+  background-image: linear-gradient(white, white), linear-gradient(90deg, rgb(255, 255, 255), rgb(100, 100, 100));
+  border: double 5px transparent;
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  box-shadow: 0 0 5px;
+}
+
+@media (min-width: 920px) {
+  .container {
+    margin-top: 200px;
+    margin-bottom: auto;
+    padding: 0;
+    flex-wrap: nowrap;
+  }
+
+  .inline .sidebar-satu {
+    margin-left: 5%;
+    margin-top: 20px;
+  }
+
+  .inline .sidebar-dua {
+    margin: 25px 0 0 0px;
+    width: auto;
+  }
+
+  nav {
+    height: 71px;
+  }
+
+  .inline {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+
+  .inline ul li {
+    margin-right: 20px;
+  }
+
+  .inline .sidebar-tiga {
+    margin-right: 5%;
+    margin-top: 10px;
+  }
+
+  hr {
+    width: 90%;
+  }
+
+  /* content */
+
+  .content {
+    margin-left: 5%;
+    margin-right: 50px;
+  }
+
+  .content h1 {
+    font-size: 60px;
+  }
+
+  .content .judul2 {
+    font-size: 50px;
+  }
+
+  /* image */
+  img {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .image {
+    width: 80%;
+    max-width: 100%;
+    margin-right: 5%;
+    margin-left: 30px;
+    box-sizing: border-box;
+    grid-template-columns: repeat(2, minmax(250px, 1fr));
+    margin-bottom: 0;
+  }
+}
+
+.navigasi {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  display: none;
+  cursor: pointer;
+}
+.navigasi div {
+  margin-bottom: 10px;
+  width: 40px;
+  height: 3px;
+  background-color: white;
+}
+@media (min-width: 700px) {
+  .image {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(250px, 100%));
+    gap: 1%;
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .hidden {
+    display: none;
+  }
+  .navigasi {
+    display: block;
+  }
+
+  div .shape-1 {
+    transform: rotate(45deg) translate(9px, 16px);
+  }
+
+  div .shape-2 {
+    transform: rotate(-90deg) translateY(10px);
+  }
+  div .shape-3 {
+    transform: rotate(-45deg) translate(9px, -16px);
+  }
+}

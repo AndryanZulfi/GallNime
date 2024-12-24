@@ -1,0 +1,241 @@
+@import url("https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Chewy&family=Climate+Crisis&family=Fredoka+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Chela+One&family=Chewy&family=Climate+Crisis&family=Coiny&family=Fredoka+One&family=Knewave&family=Londrina+Shadow&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Chela+One&family=Chewy&family=Climate+Crisis&family=Coiny&family=Knewave&family=Lilita+One&family=Londrina+Shadow&display=swap");
+/* Sidebar */
+
+body {
+  font-family: Arial, sans-serif, "Arial Narrow";
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  width: 100vw;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+nav {
+  top: 0;
+  position: fixed;
+  width: 100%;
+  height: auto;
+  background-color: white;
+  z-index: 999999;
+}
+
+.inline {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+
+.inline .sidebar-satu {
+  font-size: 35px;
+  font-weight: bold;
+  font-family: "Fredoka One", "Knewave", "Chewy", "Black Ops One", Verdana, sans-serif, Geneva, Tahoma, "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  margin: 20px 0 0 10px;
+  color: rgb(66, 64, 64);
+}
+
+.inline .sidebar-dua {
+  margin: 15px 40px 0 10px;
+  width: 600px;
+  font-family: "Black Ops One", "Chewy", "Fredoka One", "Black Ops One", Verdana, sans-serif, Geneva, Tahoma, "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.sidebar-dua ul li {
+  display: inline-block;
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+.sidebar-dua li a {
+  text-decoration: none;
+  color: rgb(170, 170, 170);
+  position: relative;
+}
+
+.btn-login {
+  width: 65px;
+  height: 20px;
+  font-size: 20px;
+  background: transparent;
+  border: 2px solid rgb(0, 0, 0);
+  padding: 10px 20px;
+  border-radius: 10px;
+  line-height: 20px;
+  text-align: center;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.btn-login:hover h3 {
+  opacity: 1;
+  color: rgb(65, 63, 63);
+}
+
+.sidebar-tiga a {
+  text-decoration: none;
+  color: rgb(170, 170, 170);
+}
+.inline .sidebar-tiga {
+  margin: 10px 10px 0 10px;
+}
+
+hr {
+  width: 95%;
+}
+
+.container {
+  width: 100%;
+  margin: 120px auto;
+  /* border: 1px solid black; */
+}
+.image {
+  width: 90%;
+  /* border: 2px solid black; */
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+img {
+  display: block;
+  width: 100%;
+  transition: 0.5s;
+  border-radius: 10px;
+}
+img:hover {
+  transform: scale(1.05);
+}
+
+/* anime series */
+.animeseries {
+  position: fixed;
+  margin: 0 -50px;
+  background-color: white;
+  box-shadow: 0 0 5px;
+  width: 220px;
+  height: 110px;
+  border-radius: 10px;
+  overflow: auto;
+  opacity: 0;
+  transition: 0.1s 0.3s;
+  z-index: 9999;
+}
+.animeseries li a {
+  text-decoration: none;
+  color: gray;
+  font-size: 20px;
+}
+.animeseries li {
+  margin-bottom: 10px;
+}
+
+.animeseries ul {
+  margin-top: 15px;
+  margin-left: 10px;
+}
+
+.sidebar-dua .anime:hover .animeseries {
+  animation: overlayFide 0.5s 0.5s forwards alternate;
+}
+
+/* overlay Navigasi */
+.sidebar-dua a::after {
+  content: " ";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 100%;
+  height: 3px;
+  background-color: rgb(28, 26, 26);
+  border-radius: 10px;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 0.5s;
+}
+
+.sidebar-dua a:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+@keyframes overlayFide {
+  0% {
+    height: 0;
+    opacity: 0;
+  }
+  100% {
+    height: 170px;
+    opacity: 0.85;
+  }
+}
+
+@media (min-width: 920px) {
+  .inline .sidebar-satu {
+    margin-left: 5%;
+    margin-top: 20px;
+  }
+
+  .inline .sidebar-dua {
+    margin: 25px 0 0 0px;
+    width: auto;
+  }
+
+  nav {
+    height: 71px;
+  }
+
+  .inline {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+
+  .inline ul li {
+    margin-right: 20px;
+  }
+
+  .inline .sidebar-tiga {
+    margin-right: 5%;
+    margin-top: 10px;
+  }
+
+  hr {
+    width: 90%;
+  }
+}
+
+.navigasi {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  display: none;
+  cursor: pointer;
+}
+.navigasi div {
+  margin-bottom: 10px;
+  width: 40px;
+  height: 3px;
+  background-color: white;
+}
+
+@media (max-width: 600px) {
+  .hidden {
+    display: none;
+  }
+  .navigasi {
+    display: block;
+  }
+
+  div .shape-1 {
+    transform: rotate(45deg) translate(9px, 16px);
+  }
+
+  div .shape-2 {
+    transform: rotate(-90deg) translateY(10px);
+  }
+  div .shape-3 {
+    transform: rotate(-45deg) translate(9px, -16px);
+  }
+}

@@ -1,0 +1,123 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  align-items: center;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  color: white;
+  width: 400px;
+  height: 440px;
+  margin: 100px auto;
+  background-color: transparent;
+  border: 2px solid white;
+  backdrop-filter: blur(15px);
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 2px 2px 2px white;
+}
+
+.box {
+  display: grid;
+  width: 80%;
+}
+
+.wrapper h1 {
+  color: white;
+  margin-top: -40px;
+  text-align: center;
+  font-size: 2em;
+  font-weight: bold;
+  /* margin-bottom: 30px; */
+}
+
+.user-box-login {
+  position: relative;
+  width: 100%;
+  height: 40px;
+  border-bottom: 3px solid white;
+  margin: 50px 0;
+}
+
+.user-box-login label {
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  font-size: 1em;
+  font-weight: 500;
+  transform: translateY(-50%);
+  pointer-events: none;
+  transition: 0.1s;
+}
+
+.wrapper .icon {
+  position: absolute;
+  right: 0;
+  bottom: 5px;
+  font-size: 20px;
+}
+
+.user-box-login input {
+  border: none;
+  background-color: transparent;
+  outline: none;
+  width: 100%;
+  height: 100%;
+  color: white;
+}
+
+.box-remember-me {
+  margin-bottom: 20px;
+  margin-top: -40px;
+}
+.sign-in a {
+  color: rgb(188, 187, 187);
+  text-decoration: none;
+}
+.sign-in a:hover {
+  text-decoration: underline;
+}
+/* .user-box-login input:not(:invalid) + label,
+.user-box-login input:focus + label {
+  opacity: 1;
+} */
+
+.email,
+.password,
+.hehe {
+  margin-top: -20px;
+}
+.hehe {
+  color: black;
+}
+
+button {
+  display: flex;
+  width: 100%;
+  height: 40px;
+  font-family: "Knewave", "Chewy", "Black Ops One", Verdana, sans-serif, Geneva, Tahoma, "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 17px;
+  line-height: 30px;
+  background-color: #e9e9e9;
+  color: gray;
+  border-radius: 10px;
+  text-align: center;
+  justify-content: center;
+  transition: 0.5s;
+}
+.btn {
+  margin-top: -10px;
+  margin-bottom: 5px;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: gray;
+  color: white;
+}

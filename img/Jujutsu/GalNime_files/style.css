@@ -1,0 +1,110 @@
+
+@font-face {
+  font-family: 'Chunk Five';
+  src: url(../fonts/ChunkFive-Regular.otf) format(otf);
+}
+
+
+/* Sidebar */
+
+
+nav {
+  top: 0;
+  position: fixed;
+  width: 100%;
+  /* margin-left: 20px; */
+  background-color: white;
+}
+
+.inline {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  /* border: 1px solid black; */
+}
+
+.inline .sidebar-satu{
+  font-size: 30px;
+  font-weight: bold;
+  font-family: 'Chunk Five', Verdana, sans-serif, Geneva, Tahoma', Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin: 10px 50px 10px 10px;
+  /* border: 2px solid red; */
+}
+.inline .sidebar-satu h2{
+  /* margin-right:200px; */
+}
+
+.inline .sidebar-dua{
+  margin: 10px 40px 10px 10px;
+  border: 1px solid blue;
+  width: 500px;
+}
+
+.inline ul li{
+  display: inline-block;
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+.inline li a{
+  text-decoration: none;
+  color: gray;
+}
+
+
+.inline h3{
+  width: 65px;
+  text-align: center;
+  font-size: 20px;
+  background-color: rgb(45, 158, 179);
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+.sidebar-tiga a{
+  text-decoration: none;
+  color: black;
+}
+.sidebar-tiga {
+  margin: 0 10px 0 10px;
+  /* border: 1px solid green; */
+
+  margin-top: 10px;
+}
+
+hr {
+  width: 95%;
+}
+
+
+
+
+
+@media(min-width: 800px) {
+
+  .inline .sidebar-satu{
+    margin-left: 80px;
+    margin-top: 20px;
+  }
+
+  .inline .sidebar-dua{
+    margin: 25px 5% 0 0px;
+  }
+
+  .inline ul li{
+    margin-right: 20px;
+  }
+
+  .inline .sidebar-tiga{
+    margin-right: 80px;
+    margin-top: 10px;
+  }
+  
+  hr {
+    width: 90%;
+  }
+
+}
+
+@media(min-width: 1000px) {
+}

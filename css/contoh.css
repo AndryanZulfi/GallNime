@@ -1,0 +1,320 @@
+
+@font-face {
+  font-family: 'Chunk Five';
+  src: url(../fonts/ChunkFive-Regular.otf) format(otf);
+}
+
+nav {
+  top: 0;
+  position: fixed;
+  width: 97.5%;
+  margin-left: 20px;
+  background-color: white;
+}
+
+.inline {
+  display: flex;
+  /* border: 1px solid darkcyan; */
+  justify-content: space-between;
+  width: 90%;
+  margin-left: 20px;
+  text-align: center;
+  flex-wrap: wrap-reverse;
+  margin-bottom: 10px;
+}
+
+
+.inline .sidebar-satu {
+  font-family: 'Chunk Five', Verdana,sans-serif, Geneva, Tahoma;
+  margin-top: 10%;
+  font-size: 30px;
+  font-weight: bold;
+  /* border: 1px solid blue; */
+  flex: 1;
+}
+
+.inline .sidebar-dua {
+  flex: 12;
+}
+
+.inline ul li a{
+  text-decoration: none;
+  color: gray;
+}
+
+
+.inline ul{
+  /* border: 1px solid black; */
+}
+
+.inline ul li {
+  display: inline-block;
+  margin-right: 20px;
+  margin-top: 10px;
+  font-size: 20px;
+  margin-left: 15px;
+}
+.inline .sidebar-dua {
+  margin-top: 10%;
+}
+
+
+.inline h3{
+  width: 65px;
+  text-align: center;
+  font-size: 20px;
+  background-color: rgb(45, 158, 179);
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+.inline .sidebar-tiga {
+  flex: 1;
+  margin-top: 10%;
+  margin-right: 20px;
+  /* border: 1px solid red; */
+}
+.inline a{
+  text-decoration: none;
+  color: black;
+}
+
+hr {
+  width: 90%;
+  margin-left: 10px;
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+
+/*
+/*Content*/
+
+.container {
+  width: 90%;
+  border: 1px solid black;
+  margin: 30% auto;
+  /* width: 1000px; */
+  margin-left: 20px;
+  margin-right: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* justify-content: space-between; */
+  /* flex-wrap: wrap; */
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+
+.content {
+  /* border: 1px solid blue; */
+  background-color: white;
+  /* margin-right: 20px; */
+}
+
+h1{
+  font-size: 60px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.content .judul2{
+  font-size: 50px;
+  font-weight: bold;
+  /* line-height: 50px; */
+  margin-bottom: 5px;
+}
+.content .paraf {
+  margin-bottom: 30px;
+}
+
+
+.gallery a{
+  text-decoration: none;
+  color: black;
+  background-color: rgb(38, 206, 212);
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+
+/* image */
+
+img {
+  width: 100%;
+  background-size: cover;
+  margin: 10px;
+  box-sizing: border-box;
+}
+
+.image {
+  max-width: 200px;
+  box-sizing: border-box;
+  /* border: 1px solid black; */
+}
+
+.image .naruto{
+   border-radius: 10px;
+}
+
+.image .tanjiro img{
+  border-radius: 10px;
+}
+
+.image .gojo {
+}
+
+.image .naruto img{
+  border: 5px solid ;
+  border-radius: 10px;
+  
+  background-image: radial-gradient(white, white),
+  linear-gradient(90deg, rgb(150, 24, 204), rgb(252, 202, 20));
+  border: double 5px transparent;
+  background-origin: border-box;
+  background-clip: content-box,border-box;
+ 
+}
+
+.image .asta img{
+  border: 5px solid ;
+  border-radius: 10px;
+
+  background-image: linear-gradient(white, white),
+  linear-gradient(90deg, rgb(215, 21, 21), rgb(0, 0, 0));
+  border: double 5px transparent;
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+}
+
+.image .tanjiro img{
+  border: 5px solid ;
+  border-radius: 10px;
+
+  background-image: linear-gradient(white, white),
+  linear-gradient(90deg, rgb(22, 149, 5), rgb(5, 211, 160));
+  border: double 5px transparent;
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+}
+
+.image .gojo img{
+  border: 5px solid;
+  border-radius: 10px;
+  background-image: linear-gradient(white, white),
+  linear-gradient(90deg, rgb(13, 42, 172), rgb(165, 191, 234));
+  border: double 5px transparent;
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+}
+
+
+
+
+
+
+
+
+/* Clear */
+
+
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}
+
+@media(min-width: 1000px) {
+
+
+.inline {
+  margin-left: 80px;
+}
+
+.inline .sidebar-satu {
+  margin: 25px 0 10px 0;
+  float: left;
+}
+
+.inline .sidebar-dua {
+  margin-top: 10px;
+}
+
+.inline .sidebar-tiga{
+  margin: 20px 0 10px 0;
+}
+
+.inline ul li {
+  margin-top: 30px;
+}
+
+hr {
+  margin-left: 80px;
+  margin-right: 80px;
+}
+
+
+
+.container {
+  /* border: 1px solid black; */
+  margin: 22% auto;
+  /* width: 1000px; */
+  margin-left: 80px;
+  margin-right: 80px;
+
+}
+
+img {
+    max-width: 400px;
+    /* width: 20%; */
+    margin: 10px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+.image {
+    max-width: 900px;
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    /* border: 1px solid black; */
+  }
+
+h1{
+  margin-right: 10px;
+}
+
+@media(min-width: 600px) {
+
+  .inline{
+    margin-right: 80px;
+  }
+
+
+  .inline .sidebar-dua{
+    margin-top: 0;
+  }
+
+  
+}
+}

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GalNime</title>
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/login.css">
+</head>
+
+<body>
+  <nav class="">
+    <div class="inline cf">
+      <div class="sidebar-satu">
+        <h2>GallNime.</h2>
+      </div>
+
+      <div class="navigasi shape">
+        <div class="line-1 shape-1"></div>
+        <div class="line-2 shape-2"></div>
+        <div class="line-3 shape-3"></div>
+      </div>
+
+      <div id="listbar" class="sidebar-dua hidden">
+        <ul class="cf">
+          <li><a href="../html/halaman1.html">Home</a></li>
+          <li><a href="../html/gallery.html">Gallery</a></li>
+          <li class="anime"><a href="#animeoverlay">Anime Series</a>
+            <div id="animeoverlay" class="animeseries">
+              <ul class="overlay-anime">
+                <li><a href="">Naruto Shipp</a></li>
+                <li><a href="">Boruto Uzumaki</a></li>
+                <li><a href="">Demon Slayer</a></li>
+                <li><a href="">Jujutsu Kaisen</a></li>
+                <li><a href="">Black Clover</a></li>
+              </ul>
+            </div>
+          </li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </div>
+
+      <div class="sidebar-tiga">
+        <a href="login.html">
+          <div class="btn-login">
+            <h3 class="cf">Login</h3>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <div class="wrapper">
+      <h1>Login</h1>
+      <div class="box">
+
+        <form action='#'>
+          <!-- make label up -5x when the value is not empty -->
+
+          <div class="user-box-login">
+            <span class="icon"><ion-icon name="mail-outline"></ion-icon></span>
+            <input type="email">
+            <label for="email">Email</label>
+          </div>
+          <div class="user-box-login">
+            <div class="lock">
+              <span class="icon keyLocked"><ion-icon name="lock-closed-outline"></ion-icon></span>
+              <span class=" icon keyOpen"><ion-icon name="lock-open-outline"></ion-icon></span>
+            </div>
+            <input type="password">
+            <label for="password" class="pwd"">Password</label>
+          </div>
+
+
+
+          <div class=" box-remember-me">
+              <input type="checkbox">
+              <label for="checkbox">Remember Me</label>
+          </div>
+          <div class="btn">
+            <button>Login</button>
+          </div>
+          <div class="sign-in">
+            <p>Belum punya akun?<a href="#">Daftar</a></p>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script src="../js/login.js"></script>
+</body>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</html>
